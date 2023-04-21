@@ -9,9 +9,9 @@ public class MyArrays {
     //复制数组
 
     /**
-     * 复制数组
+     * 反转数组
      * @param arr 输入数组
-     * @return 输出复制的数组
+     * @return 输出反转的数组
      */
     public int[] reverseArray(int[] arr){
         int length = arr.length;
@@ -22,10 +22,35 @@ public class MyArrays {
         }
         return arr;
     }
-    //数组反转
-    public int[] copyArray(int[] arr){
-        return null;
+    //数组排序
+
+    /**
+     * 升序，降序方法
+     * @param arr 输入
+     * @return 输出
+     */
+    public int[] sortArray(int[] arr,String state){
+        //判断降序，或者升序
+        if ("dec".equals(state)){
+            for (int i = 0; i < arr.length-1 ; i++) {
+                for (int j = 0; j < arr.length-1 ; j++) {
+                    if (arr[j]<arr[j+1]){
+                        int temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = temp;
+                    }
+                }
+            }
+        }
+        return arr;
     }
-    //
+    //计算n！
+    public int getMul(int n){
+        if (n==1){
+            return 1;
+        }else {
+            return getMul(n-1)*n;
+        }
+    }
 
 }
