@@ -5,8 +5,7 @@ public class MyArraysTest {
         int[] arr = new int[]{1,4,46,6,7,8,5,434,56,345,3,23443};
           MyArrays myArrays = new MyArrays();
         int[] ints = myArrays.reverseArray(arr);
-        int[] ints1 = myArrays.reverseArray(ints);
-        //myArrays.sortArray(arr,"dec");
+        myArrays.sortArray(arr,"dec");
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.print(arr[i]+ "\t");
 //        }
