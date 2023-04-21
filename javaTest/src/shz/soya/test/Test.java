@@ -76,9 +76,38 @@ public class Test {
         }
     }
 
+    //排序算法
     public void arrayTest3(){
+        int[] arr = new int[]{2,45,6,23,75,443,562,134,765,355,78,43,346,542};
+        //快速排序
+       // quickSort(arr);
+        //冒泡排序
+        bubbleSort(arr);
 
     }
+    //快排
+    public void quickSort(int[] arr){
 
-
+    }
+    //冒泡
+    public void bubbleSort(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            boolean flag = false;
+            for (int j = 0; j < arr.length-1; j++) {
+                if (arr[j]>arr[j+1]){
+                    int tem = arr[j];
+                    arr[j]= arr[j+1];
+                    arr[j+1] = tem;
+                    flag =true;
+                }
+            }
+            if (!flag){
+                break;
+            }
+        }
+        for (int i = 0; i <arr.length ; i++) {
+            System.out.print(arr[i] + "\t");
+        }
+    }
+    //
 }

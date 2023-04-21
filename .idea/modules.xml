@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Javaoop/Javaoop.iml" filepath="$PROJECT_DIR$/Javaoop/Javaoop.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/javaNovice.iml" filepath="$PROJECT_DIR$/.idea/javaNovice.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaTest/javaTest.iml" filepath="$PROJECT_DIR$/javaTest/javaTest.iml" />
     </modules>

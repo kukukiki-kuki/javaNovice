@@ -10,7 +10,7 @@ public class Main {
 
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
         Test test = new Test();
-        test.arrayTest2();
+        test.arrayTest3();
 
 
     }
