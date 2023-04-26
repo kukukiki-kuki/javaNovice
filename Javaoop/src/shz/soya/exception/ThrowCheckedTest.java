@@ -10,7 +10,7 @@ package shz.soya.exception;
 public class ThrowCheckedTest {
     public static void main(String[] args) {
         try {
-            System.out.println(max());
+            System.out.println(max(13,23,45,66,78,9));
         } catch (Exception e) {
             e.printStackTrace();
         }
