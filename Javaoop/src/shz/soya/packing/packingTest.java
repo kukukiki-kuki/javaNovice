@@ -15,8 +15,8 @@ public class packingTest {
      // Float f = new Float("4.56");
         // Long l = new Long("asdf");  //NumberFormatException
 
-        Integer obj2;//使用包装类中的valueOf方法
-        obj2 = Integer.valueOf(4);
+        Integer obj2=Integer.valueOf(4);;//使用包装类中的valueOf方法
+
         String s = String.valueOf(obj2);
         int i = parseInt(s);
         System.out.println(i);
