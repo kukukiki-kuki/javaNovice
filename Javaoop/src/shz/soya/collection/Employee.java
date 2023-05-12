@@ -62,8 +62,7 @@ public class Employee implements Comparable{
         if(o == this){
             return 0;
         }
-        if(o instanceof Employee){
-            Employee emp = (Employee) o;
+        if(o instanceof Employee emp){
             return this.name.compareTo(emp.name);
         }
         throw new RuntimeException("传入的类型不匹配");
