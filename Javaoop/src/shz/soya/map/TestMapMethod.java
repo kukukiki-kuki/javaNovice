@@ -150,12 +150,14 @@ public class TestMapMethod {
         Scanner scanner = new Scanner(System.in);
         System.out.println("请输入10个数");
         for (int i = 0; i < 10; i++) {
-            Integer next = scanner.nextInt();
-            list.add(next);
+            list.add(scanner.nextInt());
         }
 
+        Collections.sort(list);
+        Collections.reverse(list);
+
         for (Object o : list) {
-            System.out.print(o);
+            System.out.print(o+"\t");
         }
     }
 }
