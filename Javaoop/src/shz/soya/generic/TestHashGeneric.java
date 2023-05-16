@@ -13,3 +13,4 @@ public class TestHashGeneric {
         System.out.println(circleComparator1.compare(new Circle(1), new Circle(2)));
     }
 }
+
