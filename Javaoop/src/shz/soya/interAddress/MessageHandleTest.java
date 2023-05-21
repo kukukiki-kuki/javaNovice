@@ -40,9 +40,14 @@ public class MessageHandleTest extends Thread{
             }
             sendToOther(ip+"下线了");
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            try {
+                sendToOther(ip+"掉线了");
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }finally {
+            TestChatServer.onlineList.remove(socket);
         }
-
     }
 
     //发送给其他人消息的方法
